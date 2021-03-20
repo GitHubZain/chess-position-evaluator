@@ -19,7 +19,7 @@ A flattened array of:
 - 2 Bitboards representing any repetitions that the players have made (Aka what move not to make to avoid a draw by repitition)
 - A single number representing the ELO of player one. (Normalized)
 - A single number representing the ELO of player two (Normalized, like player one)
-- A single number representing how many minutes player one has.
-- A single number representing how many minutes player two has.
+- A single number representing how many minutes player one has. (Divided by 10, capped at 15)
+- A single number representing how many minutes player two has. (Divided by 10, capped at 15)
 - 4 booleans (1 or 0) representing whether P1 and P2 can castle, and on what side. (Queen/King)
-- Number of moves in which a pawn has not been pushed and a piece has not been captured. After 50 of these moves, the game is drawn.
+- Number of moves in which a pawn has not been pushed and a piece has not been captured. After 50 of these moves, the game is drawn. (Also normalized)
